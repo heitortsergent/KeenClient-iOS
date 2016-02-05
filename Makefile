@@ -1,3 +1,6 @@
 test:
-	which ios-sim || brew install ios-sim
-    xcodebuild test -scheme KeenClient -sdk iphonesimulator -configuration Debug RUN_UNIT_TEST_WITH_IOS_SIM=YES -arch i386
+	  xcodebuild \
+			-scheme KeenClient \
+			-sdk iphonesimulator \
+			-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2' \
+			clean test | xcpretty --test --color
