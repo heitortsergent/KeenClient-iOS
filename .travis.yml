@@ -11,5 +11,5 @@ before_install:
   - brew update || brew update
   - brew outdated xctool || brew upgrade xctool
 install: bundle install --without=documentation --path ../travis_bundle_dir
-after_success: bundle exec slather
+after_success: bundle exec slather -v
 script: ./bin/test.sh

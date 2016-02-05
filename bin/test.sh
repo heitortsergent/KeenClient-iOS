@@ -6,4 +6,4 @@ xcodebuild \
 	-sdk iphonesimulator \
 	-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2' \
   ONLY_ACTIVE_ARCH=NO \
-	clean build test | xcpretty --color
+	clean test | xcpretty --color
