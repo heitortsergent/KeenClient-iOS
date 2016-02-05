@@ -1,4 +1,4 @@
 coverage_service: coveralls
-xcodeproj: path/to/project.xcodeproj
+xcodeproj: ./KeenClient.xcodeproj
 ignore:
   - Library/*
